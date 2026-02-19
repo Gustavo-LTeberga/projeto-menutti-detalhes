@@ -11,3 +11,82 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
+
+/*classes*/
+
+.opacity-all{
+    background-color: rgba(14, 14, 14, 0.45);
+    min-height: 100vh;
+}
+.opacity-menu{
+    background-color: rgba(14, 14, 14, 0.25);
+}
+.menu-content-opacity{
+    opacity: 90%; 
+}
+.letra-personalizada{
+    animation: entrada-dramatica2 1s ease-out forwards;
+}
+
+.btn-dinamico{
+    background: none;
+    border: none;
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 12px 24px;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+    font-style: oblique;
+    font-weight: 700;
+
+    animation: entrada-dramatica 1s ease-out forwards;
+}
+
+/*animações*/
+
+.borda-dinamica{
+    position: relative;
+    cursor: pointer;
+}
+
+.borda-dinamica::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 4px;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transform: translateX(-50%);
+    transition: width 0.35s ease;
+
+    
+}
+
+.borda-dinamica:hover::after{
+    width: 75%;
+}
+
+/*keyframes*/
+
+@keyframes entrada-dramatica {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes entrada-dramatica2 {
+    from {
+        opacity: 0;
+        transform: scale(190%);
+    }
+    to {
+        opacity: 1;
+        transform: scale(100%);
+    }
+}
