@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+
+    min-height: 100vh;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/*classes*/
+
+
+.color-one {
+    background-color: #0D0D0D;
+}
+
+.color-two {
+    background-color: #592F20;
+}
+
+.color-three {
+    background-color: #D9AA8F;
+}
+
+.color-four {
+    background-color: #A6653F;
+}
+
+.color-five {
+    background-color: #F2DFCE;
+}
+
+.text-gold{
+    color: #d8be68;
+}
+
+.tamanho{
+    min-height: 25rem;
+}
