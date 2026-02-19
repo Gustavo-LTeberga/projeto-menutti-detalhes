@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+
+    min-height: 100vh;
+
+    background-image: url("../img/fundo.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
